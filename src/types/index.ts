@@ -140,7 +140,7 @@ export type EconItem = {
 	tags: EconTag[];
 	app_data?: { def_index: number; quality: number; quantity?: string };
 	type: string;
-
+	strangeCounterTxt: string;
 	tradable: number | boolean;
 	commodity: number | boolean;
 	marketable: number | boolean;
@@ -148,6 +148,7 @@ export type EconItem = {
 	icon_url?: string;
 	icon_url_large?: string;
 	appid?: number;
+	
 	contextid?: string;
 	instanceid?: string;
 	classid?: string;
