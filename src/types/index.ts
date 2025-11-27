@@ -140,7 +140,7 @@ export type EconItem = {
 	tags: EconTag[];
 	app_data?: { def_index: number; quality: number; quantity?: string };
 	type: string;
-	strangeCounterTxt: string;
+	originalTypeTxt: string;
 	tradable: number | boolean;
 	commodity: number | boolean;
 	marketable: number | boolean;
