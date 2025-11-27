@@ -264,7 +264,7 @@ export default class ParsedEcon {
 			level: this.level,
 			classes: this.tags.classes,
 			type: this.tags.type,
-			...(this.tags.quality === '11' ? { strangeCounterTxt: this.item.strangeCounterTxt } : {}),
+			strangeCounterTxt: this.item.strangeCounterTxt ?? "-",
 			...(this.descriptions.killstreak.killstreaker
 				? { killstreaker: this.descriptions.killstreak.killstreaker }
 				: {}),
