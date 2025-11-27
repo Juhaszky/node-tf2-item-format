@@ -46,6 +46,7 @@ export default class ParsedEcon {
 	public nameAttrs: NameAttributes;
 	public trueDefindex: number;
 	public level: number;
+	public strangeCounterTxt: string;
 	public options: EconOptions;
 	public crateNumber: number;
 	public uses?: number;
@@ -58,6 +59,7 @@ export default class ParsedEcon {
 		this.fullEcon = hasAppData(this.item);
 
 		this.tags = getTags(this);
+		this.strangeCounterTxt = this.item.strangeCounterTxt;
 		this.descriptions = getDescriptions(this);
 		this.properties = getPropertyAttributes(this);
 		this.nameAttrs = getNameAttributes(this);
